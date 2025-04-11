@@ -1,4 +1,5 @@
 import React from "react";
+import './DisplayInfor.scss';
 
 class DisplayInfor extends React.Component {
 
@@ -19,7 +20,7 @@ class DisplayInfor extends React.Component {
         // const listUsr = this.props.listUser
         // console.log(listUser)
         return (
-            <div>
+            <div className="display-infor-container">
 
                 <div>
                     <span onClick={() => this.handleShowHide()}>
@@ -33,7 +34,7 @@ class DisplayInfor extends React.Component {
                             return (
 
                                 <div key={user.id} className={user.age > 19 ? "green" : " red"}>
-                                    <div>My name is {user.name}</div>
+                                    <div style={{ color: 'blue', paddingTop: '50px' }}>My name is {user.name}</div>
                                     <div>I'm {user.age}</div>
                                     <hr />
                                 </div>
