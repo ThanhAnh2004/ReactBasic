@@ -55,9 +55,6 @@ const DisplayInfor = (props) => {
     const { listUser } = props // Object 
     const [isShowHideListUser, setShowHideListUser] = useState(true);
 
-    //     this.state = {
-    //         isShowHideListUser : true
-    //     }
 
     const handleShowHideListUser = () => {
         // this.setState({
